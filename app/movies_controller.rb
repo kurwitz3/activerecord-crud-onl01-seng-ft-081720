@@ -19,7 +19,11 @@ def can_be_created_with_a_hash_of_attributes
 
 end
 
+<<<<<<< HEAD
 def can_be_created_in_a_block( args = {title: "Home Alone", release_date: 1990} )
+=======
+def can_be_created_in_a_block(args = title: "Home Alone", release_date: 1990  )
+>>>>>>> 19b83ab819cc7960485c0bb4a247cd22c3943498
 
   # title == "Home Alone"
   # release_date == 1990
@@ -54,7 +58,11 @@ end
 def can_find_using_where_clause_and_be_sorted
   # For this test return all movies released after 2002 and ordered by 
   # release date descending
+<<<<<<< HEAD
   Movie.all.where("release_date > 2002").order('release_date DESC')
+=======
+  Movie.where("release_date > 2002").order(realease_date: :desc)
+>>>>>>> 19b83ab819cc7960485c0bb4a247cd22c3943498
 end
 
 def can_be_found_updated_and_saved
